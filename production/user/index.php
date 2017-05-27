@@ -1,22 +1,4 @@
-<?php
-session_start();
-if(isset($_SESSION['role']) && $_SESSION['role'] == 1)
-{ 
 
-} else if (isset($_SESSION['role']) && $_SESSION['role'] == 0) {
-  header ('Location: ../../page_403.php');
-  exit;
-} else if (isset($_SESSION['role']) && $_SESSION['role'] == -1) {
-  header ('Location: ../../page_403.php');
-  exit;
-}
-else
-{
-  header ('Location: ../../page_4033.php');
-  exit;
-
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +10,9 @@ else
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Beranda</title>
+
+  <!-- jQuery -->
+  <script src="../../vendors/jquery/dist/jquery.min.js"></script>
 
   <!-- Bootstrap -->
   <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
