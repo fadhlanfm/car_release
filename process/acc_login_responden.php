@@ -293,18 +293,20 @@ if(isset($_POST['id']) && isset($_POST['password']))
 					$_SESSION['nama'] = $_SESSION['unit'];
 					break;
 			}
-			echo 
+			header("Location:../production/user/index.php");
+			/*echo 
 			"<script>
 				window.location.href = '../production/user/index.php';
-			</script>";
+			</script>";*/
 			exit;
 		}
 		else
 		{
-  			echo "<script type='text/javascript'>
+			header("Location:../login_responden.php?alert=1");
+  			/*echo "<script type='text/javascript'>
   			window.location.href = '../login_responden.php?alert=1';
   			</script>";
-  			exit;
+  			exit;*/
 		}
 	}
 }

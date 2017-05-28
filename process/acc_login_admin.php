@@ -26,17 +26,18 @@ if(isset($_POST['id']) && isset($_POST['password']))
 			$_SESSION['id'] = $id_admin;
 			$_SESSION['role'] = $row->role;
 			header("Location:../production/index.php");
-			echo 
+			/*echo 
 			"<script>
 				window.location.href = '../production/index.php';
-			</script>";
+			</script>";*/
 			exit;
 		}
 		else
 		{
-  			echo "<script type='text/javascript'>
+			header("Location:../login_admin.php?alert=1");
+  			/*echo "<script type='text/javascript'>
   			window.location.href = '../login_admin.php?alert=1';
-  			</script>";
+  			</script>";*/
   			exit;
 		}
 	}
