@@ -11,7 +11,7 @@ include ('check_session.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Beranda</title>
+  <title><?php echo $_SESSION['role']; ?>Beranda</title>
 
   <!-- jQuery -->
   <script src="../../vendors/jquery/dist/jquery.min.js"></script>

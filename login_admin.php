@@ -30,10 +30,13 @@ if ($db->connect_errno)
 	</script>
 </head>
 <body>
-	<div class="login-page">
+	<div class="login-page">	
   	<div class="form">
     	<form class="login-form" action=" process/acc_login_admin.php" method="POST">
     		<h1>Login Admin</h1>
+    		<?php if (isset($_GET['alert']) && $_GET['alert']==1) {
+				echo "<h5><mark>Username atau Password salah</mark></h5>";
+			} ?>
 			<input type="text" placeholder="ID Admin" name="id">
 			<input type="password" placeholder="Password" name="password">
 			<button type="submit">Masuk</button>

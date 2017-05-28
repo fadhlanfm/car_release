@@ -15,14 +15,16 @@ if(isset($_POST['id']) && isset($_POST['password']))
 		{
 			$_SESSION['id'] = $id_admin;
 			$_SESSION['role'] = $row->role;
-			header("Location:../production/index.php");
+			echo 
+			"<script>
+				window.location.href = '../production/index.php';
+			</script>";
 			exit;
 		}
 		else
 		{
-			$message = "ID atau Password anda salah.\\nSilahkan coba kembali.";
-  			echo "<script type='text/javascript'>alert('$message');
-  			window.location = '../login_admin.php';
+  			echo "<script type='text/javascript'>
+  			window.location.href = '../login_admin.php?alert=1';
   			</script>";
   			exit;
 		}

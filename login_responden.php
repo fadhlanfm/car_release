@@ -7,7 +7,6 @@ if ($db->connect_errno)
 	{
 		die("Could not connect to the database: <br />".$db->connect_error);
 	}
-
     if(isset($_SESSION['role']) && $_SESSION['role'] = 1)
     {
     header("Location:production/user/index.php");
@@ -35,6 +34,9 @@ if ($db->connect_errno)
   	<div class="form">
     	<form class="login-form" action="process/acc_login_responden.php" method="POST">
     		<h1>Login Responden</h1>
+    		<?php if (isset($_GET['alert']) && $_GET['alert']==1) {
+				echo "<h5><mark>Username atau Password salah</mark></h5>";
+			} ?>
 			<input type="text" placeholder="Kode Unit/Branch" name="id" required>
 			<input type="password" placeholder="Password" name="password" required>
 			<button type="submit">Masuk</button>

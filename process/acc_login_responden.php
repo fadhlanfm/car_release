@@ -283,14 +283,16 @@ if(isset($_POST['id']) && isset($_POST['password']))
 					$_SESSION['nama'] = $_SESSION['unit'];
 					break;
 			}
-			header("Location:../production/user/index.php");
+			echo 
+			"<script>
+				window.location.href = '../production/user/index.php';
+			</script>";
 			exit;
 		}
 		else
 		{
-			$message = "ID atau Password anda salah.\\nSilahkan coba kembali.";
-  			echo "<script type='text/javascript'>alert('$message');
-  			window.location = '../login_responden.php';
+  			echo "<script type='text/javascript'>
+  			window.location.href = '../login_responden.php?alert=1';
   			</script>";
   			exit;
 		}
