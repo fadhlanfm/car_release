@@ -26,7 +26,8 @@ if(isset($_POST['id']) && isset($_POST['password']))
 			$_SESSION['id'] = $id_resp;
 			$_SESSION['role'] = $row->role;
 			$_SESSION['unit'] = $row->unit;
-			switch ($_SESSION['unit']) {
+			switch ($_SESSION['unit']) 
+			{
 				case 'JKTDA':
 					$_SESSION['nama'] = 'Internal Audit';
 					break;
@@ -287,26 +288,20 @@ if(isset($_POST['id']) && isset($_POST['password']))
 					$_SESSION['nama'] = 'Branch Office Bima';
 					break;
 
-				//kurang upgam ke kanan
-
 				default:
 					$_SESSION['nama'] = $_SESSION['unit'];
-					break;
 			}
 			header("Location:../production/user/index.php");
-			/*echo 
-			"<script>
-				window.location.href = '../production/user/index.php';
-			</script>";*/
 			exit;
 		}
 		else
 		{
-			header("Location:../login_responden.php?alert=1");
-  			/*echo "<script type='text/javascript'>
+			/*header("Location:../login_responden.php?alert=1");
+  			echo "<script type='text/javascript'>
   			window.location.href = '../login_responden.php?alert=1';
   			</script>";
   			exit;*/
+  			exit;
 		}
 	}
 }

@@ -41,5 +41,5 @@ if(isset($_POST['id']) && isset($_POST['password']))
   			exit;
 		}
 	}
-}
+}	
 ?>
