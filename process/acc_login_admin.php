@@ -1,6 +1,16 @@
 <?php 	
 session_start();
-include('../process/connect_db.php');
+    //connect database
+    include('../process/connect_db.php');
+    if(isset($_SESSION['role']) && $_SESSION['role'] == -1){
+            header("Location:production/index.php");
+            exit;
+        }else if (isset($_SESSION['role']) && $_SESSION['role'] == 1){
+            header("Location:production/user/index.php");
+            exit;
+        }
+        else{
+        }
 if(isset($_POST['id']) && isset($_POST['password']))
 {	
 	$id_admin = secure($_POST['id'], $mysqli);
@@ -15,6 +25,7 @@ if(isset($_POST['id']) && isset($_POST['password']))
 		{
 			$_SESSION['id'] = $id_admin;
 			$_SESSION['role'] = $row->role;
+			header("Location:../production/index.php");
 			echo 
 			"<script>
 				window.location.href = '../production/index.php';

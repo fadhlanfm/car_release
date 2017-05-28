@@ -1,21 +1,16 @@
 <?php
-session_start();
-//connect database
-include('process/connect_db.php');
-$db = new mysqli($db_host,$db_username, $db_password, $db_database);
-if ($db->connect_errno)
-	{
-		die("Could not connect to the database: <br />".$db->connect_error);
-	}
-    if(isset($_SESSION['role']) && $_SESSION['role'] = -1)
-    {
-    header("Location:production/index.php");
-    exit;
-    } else if (isset($_SESSION['role']) && $_SESSION['role'] = 1)
-    {
-    header("Location:production/user/index.php");
-    exit;
-    }
+    session_start();
+    //connect database
+    include('/process/connect_db.php');
+    if(isset($_SESSION['role']) && $_SESSION['role'] == -1){
+            header("Location:production/index.php");
+            exit;
+        }else if (isset($_SESSION['role']) && $_SESSION['role'] == 1){
+            header("Location:production/user/index.php");
+            exit;
+        }
+        else{
+        }
 ?>
 
 <html>
@@ -32,7 +27,7 @@ if ($db->connect_errno)
 <body>
 	<div class="login-page">	
   	<div class="form">
-    	<form class="login-form" action=" process/acc_login_admin.php" method="POST">
+    	<form class="login-form" action="process/acc_login_admin.php" method="POST">
     		<h1>Login Admin</h1>
     		<?php if (isset($_GET['alert']) && $_GET['alert']==1) {
 				echo "<h5><mark>Username atau Password salah</mark></h5>";
