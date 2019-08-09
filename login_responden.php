@@ -15,7 +15,7 @@
 
 <html>
 <head>
-	<title>Login Responden</title>
+	<title>Login Unit</title>
 	<link rel="icon" href="assets/gi.ico" />
 	<link rel="stylesheet" type="text/css" href="assets/css_login.css">
 	<script type="text/javascript">
@@ -28,11 +28,11 @@
 	<div class="login-page">
   	<div class="form">
     	<form class="login-form" action="process/acc_login_responden.php" method="POST">
-    		<h1>Login Responden</h1>
+    		<h1>Login Unit</h1>
     		<?php if (isset($_GET['alert']) && $_GET['alert']==1) {
 				echo "<h5><mark>Username atau Password salah</mark></h5>";
 			} ?>
-			<input type="text" placeholder="Kode Unit/Branch" name="id" required>
+			<input type="text" placeholder="Kode Unit" name="id" required>
 			<input type="password" placeholder="Password" name="password" required>
 			<button type="submit">Masuk</button>
 			<h6 align="right"><a href="index.php">Kembali</a></h6>

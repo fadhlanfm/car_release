@@ -245,7 +245,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_flyhi0" class="form-control" value="<?php $banding[]=$banding_flyhi0=($row->hasil_flyhi0-$row->target_flyhi0)/$row->target_flyhi0*100; echo $banding_flyhi0;?>">
+                      <input readonly type="hidden" id="target" name="banding_flyhi0" class="form-control" value="<?php $bandingg[]=$banding_flyhi0=$row->target_flyhi0/$row->hasil_flyhi0*100; echo $banding_flyhi0;?>">
                     
                   
 
@@ -271,7 +271,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_flyhi1" class="form-control" value="<?php $banding[]=$banding_flyhi1=($row->hasil_flyhi1-$row->target_flyhi1)/$row->target_flyhi1*100; echo $banding_flyhi1;?>">
+                      <input readonly type="hidden" id="target" name="banding_flyhi1" class="form-control" value="<?php $bandingg[]=$banding_flyhi1=($row->target_flyhi1-$row->hasil_flyhi1)/$row->target_flyhi1*100; echo $banding_flyhi1;?>">
                     
                   
                 
@@ -296,7 +296,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_flyhi2" class="form-control" value="<?php $banding[]=$banding_flyhi2=($row->hasil_flyhi2-$row->target_flyhi2)/$row->target_flyhi2*100; echo $banding_flyhi2;?>">
+                      <input readonly type="hidden" id="target" name="banding_flyhi2" class="form-control" value="<?php $bandingg[]=$banding_flyhi2=($row->target_flyhi2-$row->hasil_flyhi2)/$row->target_flyhi2*100; echo $banding_flyhi2;?>">
                     
                   
                 
@@ -321,7 +321,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_flyhi3" class="form-control" value="<?php $banding[]=$banding_flyhi3=($row->hasil_flyhi3-$row->target_flyhi3)/$row->target_flyhi3*100; echo $banding_flyhi3;?>">
+                      <input readonly type="hidden" id="target" name="banding_flyhi3" class="form-control" value="<?php $bandingg[]=$banding_flyhi3=($row->target_flyhi3-$row->hasil_flyhi3)/$row->target_flyhi3*100; echo $banding_flyhi3;?>">
                     
                   
                 
@@ -346,7 +346,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_flyhi4" class="form-control" value="<?php $banding[]=$banding_flyhi4=($row->hasil_flyhi4-$row->target_flyhi4)/$row->target_flyhi4*100; echo $banding_flyhi4;?>">
+                      <input readonly type="hidden" id="target" name="banding_flyhi4" class="form-control" value="<?php $bandingg[]=$banding_flyhi4=($row->target_flyhi4-$row->hasil_flyhi4)/$row->target_flyhi4*100; echo $banding_flyhi4;?>">
                     
                   
                 <hr>
@@ -371,7 +371,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding0" class="form-control" value="<?php $banding[]=$banding0=($row->hasil0-$row->target0)/$row->target0*100; echo $banding0;?>">
+                      <input readonly type="hidden" id="target" name="banding0" class="form-control" value="<?php $bandingg[]=$banding0=$row->hasil0/$row->target0*100;; echo $banding0;?>">
                     
                   
                 
@@ -398,7 +398,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding1" class="form-control" value="<?php $banding[]=$banding1=($row->hasil1-$row->target1)/$row->target1*100; echo $banding1;?>">
+                      <input readonly type="hidden" id="target" name="banding1" class="form-control" value="<?php $bandingg[]=$banding1=$row->hasil1/$row->target1*100;; echo $banding1;?>">
                     
                   
                  
@@ -425,7 +425,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding2" class="form-control" value="<?php $banding[]=$banding2=($row->hasil2-$row->target2)/$row->target2*100; echo $banding2;?>">
+                      <input readonly type="hidden" id="target" name="banding2" class="form-control" value="<?php $bandingg[]=$banding2=($row->hasil2-$row->target2)/$row->target2*100; echo $banding2;?>">
                     
                   
                  
@@ -451,7 +451,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding3" class="form-control" value="<?php $banding[]=$banding3=($row->hasil3-$row->target3)/$row->target3*100; echo $banding3  ;?>">
+                      <input readonly type="hidden" id="target" name="banding3" class="form-control" value="<?php $bandingg[]=$banding3=($row->hasil3-$row->target3)/$row->target3*100; echo $banding3  ;?>">
                     
                   
                  
@@ -478,7 +478,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding4" class="form-control" value="<?php $banding[]=$banding4=($row->hasil4-$row->target4)/$row->target4*100; echo $banding4  ;?>">
+                      <input readonly type="hidden" id="target" name="banding4" class="form-control" value="<?php $bandingg[]=$banding4=($row->hasil4-$row->target4)/$row->target4*100; echo $banding4  ;?>">
                     
                   
                  <hr>
@@ -502,7 +502,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_financial0" class="form-control" value="<?php $banding[]=$banding_financial0=($row->hasil_financial0-$row->target_financial0)/$row->target_financial0*100; echo $banding_financial0;?>">
+                      <input readonly type="hidden" id="target" name="banding_financial0" class="form-control" value="<?php $bandingg[]=$banding_financial0=$row->hasil_financial0/$row->target_financial0*100; echo $banding_financial0;?>">
                     
                   
                 
@@ -527,7 +527,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_financial1" class="form-control" value="<?php $banding[]=$banding_financial1=($row->hasil_financial1-$row->target_financial1)/$row->target_financial1*100; echo $banding_financial1;?>">
+                      <input readonly type="hidden" id="target" name="banding_financial1" class="form-control" value="<?php $bandingg[]=$banding_financial1=($row->hasil_financial1-$row->target_financial1)/$row->target_financial1*100; echo $banding_financial1;?>">
                     
                   
                 
@@ -552,7 +552,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_financial2" class="form-control" value="<?php $banding[]=$banding_financial2=($row->hasil_financial2-$row->target_financial2)/$row->target_financial2*100; echo $banding_financial2;?>">
+                      <input readonly type="hidden" id="target" name="banding_financial2" class="form-control" value="<?php $bandingg[]=$banding_financial2=($row->hasil_financial2-$row->target_financial2)/$row->target_financial2*100; echo $banding_financial2;?>">
                     
                   
                 
@@ -577,7 +577,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_financial3" class="form-control" value="<?php $banding[]=$banding_financial3=($row->hasil_financial3-$row->target_financial3)/$row->target_financial3*100; echo $banding_financial3;?>">
+                      <input readonly type="hidden" id="target" name="banding_financial3" class="form-control" value="<?php $bandingg[]=$banding_financial3=($row->hasil_financial3-$row->target_financial3)/$row->target_financial3*100; echo $banding_financial3;?>">
                     
                   
                 
@@ -602,7 +602,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_financial4" class="form-control" value="<?php $banding[]=$banding_financial4=($row->hasil_financial4-$row->target_financial4)/$row->target_financial4*100; echo $banding_financial4;?>">
+                      <input readonly type="hidden" id="target" name="banding_financial4" class="form-control" value="<?php $bandingg[]=$banding_financial4=($row->hasil_financial4-$row->target_financial4)/$row->target_financial4*100; echo $banding_financial4;?>">
                     
                   
                 
@@ -628,7 +628,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_customer0" class="form-control" value="<?php $banding[]=$banding_customer0=($row->hasil_customer0-$row->target_customer0)/$row->target_customer0*100; echo $banding_customer0;?>">
+                      <input readonly type="hidden" id="target" name="banding_customer0" class="form-control" value="<?php $bandingg[]=$banding_customer0=($row->hasil_customer0-$row->target_customer0)/$row->target_customer0*100; echo $banding_customer0;?>">
                     
                   
                 
@@ -653,7 +653,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_customer1" class="form-control" value="<?php $banding[]=$banding_customer1=($row->hasil_customer1-$row->target_customer1)/$row->target_customer1*100; echo $banding_customer1;?>">
+                      <input readonly type="hidden" id="target" name="banding_customer1" class="form-control" value="<?php $bandingg[]=$banding_customer1=($row->hasil_customer1-$row->target_customer1)/$row->target_customer1*100; echo $banding_customer1;?>">
                     
                   
                 
@@ -678,7 +678,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_customer2" class="form-control" value="<?php $banding[]=$banding_customer2=($row->hasil_customer2-$row->target_customer2)/$row->target_customer2*100; echo $banding_customer2;?>">
+                      <input readonly type="hidden" id="target" name="banding_customer2" class="form-control" value="<?php $bandingg[]=$banding_customer2=($row->hasil_customer2-$row->target_customer2)/$row->target_customer2*100; echo $banding_customer2;?>">
                     
                   
                 
@@ -703,7 +703,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_customer3" class="form-control" value="<?php $banding[]=$banding_customer3=($row->hasil_customer3-$row->target_customer3)/$row->target_customer3*100; echo $banding_customer3;?>">
+                      <input readonly type="hidden" id="target" name="banding_customer3" class="form-control" value="<?php $bandingg[]=$banding_customer3=($row->hasil_customer3-$row->target_customer3)/$row->target_customer3*100; echo $banding_customer3;?>">
                     
                   
                 
@@ -728,7 +728,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_customer4" class="form-control" value="<?php $banding[]=$banding_customer4=($row->hasil_customer4-$row->target_customer4)/$row->target_customer4*100; echo $banding_customer4;?>">
+                      <input readonly type="hidden" id="target" name="banding_customer4" class="form-control" value="<?php $bandingg[]=$banding_customer4=($row->hasil_customer4-$row->target_customer4)/$row->target_customer4*100; echo $banding_customer4;?>">
                     
                   
                 
@@ -754,7 +754,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_ibp0" class="form-control" value="<?php $banding[]=$banding_ibp0=($row->hasil_ibp0-$row->target_ibp0)/$row->target_ibp0*100; echo $banding_ibp0;?>">
+                      <input readonly type="hidden" id="target" name="banding_ibp0" class="form-control" value="<?php $bandingg[]=$banding_ibp0=($row->hasil_ibp0-$row->target_ibp0)/$row->target_ibp0*100; echo $banding_ibp0;?>">
                     
                   
                 
@@ -779,7 +779,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_ibp1" class="form-control" value="<?php $banding[]=$banding_ibp1=($row->hasil_ibp1-$row->target_ibp1)/$row->target_ibp1*100; echo $banding_ibp1;?>">
+                      <input readonly type="hidden" id="target" name="banding_ibp1" class="form-control" value="<?php $bandingg[]=$banding_ibp1=($row->hasil_ibp1-$row->target_ibp1)/$row->target_ibp1*100; echo $banding_ibp1;?>">
                     
                   
                 
@@ -804,7 +804,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_ibp2" class="form-control" value="<?php $banding[]=$banding_ibp2=($row->hasil_ibp2-$row->target_ibp2)/$row->target_ibp2*100; echo $banding_ibp2;?>">
+                      <input readonly type="hidden" id="target" name="banding_ibp2" class="form-control" value="<?php $bandingg[]=$banding_ibp2=($row->hasil_ibp2-$row->target_ibp2)/$row->target_ibp2*100; echo $banding_ibp2;?>">
                     
                   
                 
@@ -829,7 +829,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_ibp3" class="form-control" value="<?php $banding[]=$banding_ibp3=($row->hasil_ibp3-$row->target_ibp3)/$row->target_ibp3*100; echo $banding_ibp3;?>">
+                      <input readonly type="hidden" id="target" name="banding_ibp3" class="form-control" value="<?php $bandingg[]=$banding_ibp3=($row->hasil_ibp3-$row->target_ibp3)/$row->target_ibp3*100; echo $banding_ibp3;?>">
                     
                   
                 
@@ -854,7 +854,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_ibp4" class="form-control" value="<?php $banding[]=$banding_ibp4=($row->hasil_ibp4-$row->target_ibp4)/$row->target_ibp4*100; echo $banding_ibp4;?>">
+                      <input readonly type="hidden" id="target" name="banding_ibp4" class="form-control" value="<?php $bandingg[]=$banding_ibp4=($row->hasil_ibp4-$row->target_ibp4)/$row->target_ibp4*100; echo $banding_ibp4;?>">
                     
                   
                 
@@ -880,7 +880,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_lg0" class="form-control" value="<?php $banding[]=$banding_lg0=($row->hasil_lg0-$row->target_lg0)/$row->target_lg0*100; echo $banding_lg0;?>">
+                      <input readonly type="hidden" id="target" name="banding_lg0" class="form-control" value="<?php $bandingg[]=$banding_lg0=($row->hasil_lg0-$row->target_lg0)/$row->target_lg0*100; echo $banding_lg0;?>">
                     
                   
                 
@@ -905,7 +905,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_lg1" class="form-control" value="<?php $banding[]=$banding_lg1=($row->hasil_lg1-$row->target_lg1)/$row->target_lg1*100; echo $banding_lg1;?>">
+                      <input readonly type="hidden" id="target" name="banding_lg1" class="form-control" value="<?php $bandingg[]=$banding_lg1=($row->hasil_lg1-$row->target_lg1)/$row->target_lg1*100; echo $banding_lg1;?>">
                     
                   
                 
@@ -930,7 +930,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_lg2" class="form-control" value="<?php $banding[]=$banding_lg2=($row->hasil_lg2-$row->target_lg2)/$row->target_lg2*100; echo $banding_lg2;?>">
+                      <input readonly type="hidden" id="target" name="banding_lg2" class="form-control" value="<?php $bandingg[]=$banding_lg2=($row->hasil_lg2-$row->target_lg2)/$row->target_lg2*100; echo $banding_lg2;?>">
                     
                   
                 
@@ -955,7 +955,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_lg3" class="form-control" value="<?php $banding[]=$banding_lg3=($row->hasil_lg3-$row->target_lg3)/$row->target_lg3*100; echo $banding_lg3;?>">
+                      <input readonly type="hidden" id="target" name="banding_lg3" class="form-control" value="<?php $bandingg[]=$banding_lg3=($row->hasil_lg3-$row->target_lg3)/$row->target_lg3*100; echo $banding_lg3;?>">
                     
                   
                 
@@ -980,7 +980,7 @@ if ($row->status_res==0) {
                   
                   
                     
-                      <input readonly type="hidden" id="target" name="banding_lg4" class="form-control" value="<?php $banding[]=$banding_lg4=($row->hasil_lg4-$row->target_lg4)/$row->target_lg4*100; echo $banding_lg4;?>">
+                      <input readonly type="hidden" id="target" name="banding_lg4" class="form-control" value="<?php $bandingg[]=$banding_lg4=($row->hasil_lg4-$row->target_lg4)/$row->target_lg4*100; echo $banding_lg4;?>">
                     
                   
                 <?php 
@@ -991,9 +991,7 @@ if ($row->status_res==0) {
       </form>
       <!-- PRE -->
 
-      <?php 
-        $summary=array_sum($banding)/sizeof($banding);
-      ?>
+      
 
             <!-- page content -->
       <div class="row">
@@ -1028,12 +1026,73 @@ if ($row->status_res==0) {
                     <div id="submitted" style="height:370px;"></div>
                   </div>
                   <div class="tile-stats">
-                  <div class="count">Overall : <?php echo $summary;?>%</div>
+                  <?php 
+            $summary1=array_sum($bandingg)/sizeof($bandingg);
+          ?>
+                  <div class="count">Overall : <?php echo $summary1;?>% <?php if ($summary1<=100) {
+                    echo "(Dalam skala 0 sampai 100)";
+                  } elseif ($summary1>=100 && $summary1<500) {
+                    echo "(Dalam skala 100 sampai 500)";
+                  } elseif ($summary1>=500 && $summary1<100) {
+                    echo "(Dalam skala 500 sampai 1000)";
+                  }?></div>
                   
                 </div>
                 </div>
               </div>
             <!-- CHART overall -->
+
+            <?php
+              if ($row->satuan_flyhi0==1) {
+                                  $satuan_flyhi0="Rupiah";
+                                }elseif ($row->satuan_flyhi0==2) {
+                                  $satuan_flyhi0="Hari";
+                                }elseif ($row->satuan_flyhi0==3) {
+                                  $satuan_flyhi0="%";
+                                }elseif ($row->satuan_flyhi0==4) {
+                                  $satuan_flyhi0="Kali";
+                                }
+
+                                if ($row->satuan_flyhi1==1) {
+                                  $satuan_flyhi1="Rupiah";
+                                }elseif ($row->satuan_flyhi1==2) {
+                                  $satuan_flyhi1="Hari";
+                                }elseif ($row->satuan_flyhi1==3) {
+                                  $satuan_flyhi1="%";
+                                }elseif ($row->satuan_flyhi1==4) {
+                                  $satuan_flyhi1="Kali";
+                                }
+
+                                if ($row->satuan_flyhi2==1) {
+                                  $satuan_flyhi2="Rupiah";
+                                }elseif ($row->satuan_flyhi2==2) {
+                                  $satuan_flyhi2="Hari";
+                                }elseif ($row->satuan_flyhi2==3) {
+                                  $satuan_flyhi2="%";
+                                }elseif ($row->satuan_flyhi2==4) {
+                                  $satuan_flyhi2="Kali";
+                                }
+
+                                if ($row->satuan_flyhi3==1) {
+                                  $satuan_flyhi3="Rupiah";
+                                }elseif ($row->satuan_flyhi3==2) {
+                                  $satuan_flyhi3="Hari";
+                                }elseif ($row->satuan_flyhi3==3) {
+                                  $satuan_flyhi3="%";
+                                }elseif ($row->satuan_flyhi3==4) {
+                                  $satuan_flyhi3="Kali";
+                                }
+
+                                if ($row->satuan_flyhi4==1) {
+                                  $satuan_flyhi4="Rupiah";
+                                }elseif ($row->satuan_flyhi4==2) {
+                                  $satuan_flyhi4="Hari";
+                                }elseif ($row->satuan_flyhi4==3) {
+                                  $satuan_flyhi4="%";
+                                }elseif ($row->satuan_flyhi4==4) {
+                                  $satuan_flyhi4="Kali";
+                                }
+            ?>
 
           <h2 align="center"><strong>Rincian Hasil</strong></h2>
             <form action="post_hasil_logbook.php" method="POST">
@@ -1054,20 +1113,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 1</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi0;?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi0; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi0; ?></span>
                    </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 1</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil_flyhi0;?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi0; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 1</label>
-                      <input readonly type="text" id="target" name="banding_flyhi0" class="form-control" value="<?php $banding[]=$banding_flyhi0=($row->hasil_flyhi0-$row->target_flyhi0)/$row->target_flyhi0*100; echo $banding_flyhi0;?>">
+                      <input readonly type="text" id="target" name="banding_flyhi0" class="form-control" value="<?php $banding[]=$banding_flyhi0=$row->target_flyhi0/$row->hasil_flyhi0*100; echo $banding_flyhi0;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1086,20 +1145,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 2</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi1; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi1; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi1; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 2</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil_flyhi1; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi1; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 2</label>
-                      <input readonly type="text" id="target" name="banding_flyhi1" class="form-control" value="<?php $banding[]=$banding_flyhi1=($row->hasil_flyhi1-$row->target_flyhi1)/$row->target_flyhi1*100; echo $banding_flyhi1;?>">
+                      <input readonly type="text" id="target" name="banding_flyhi1" class="form-control" value="<?php $banding[]=$banding_flyhi1=($row->target_flyhi1-$row->hasil_flyhi1)/$row->target_flyhi1*100; echo $banding_flyhi1;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1117,20 +1176,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 3</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi2; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi2; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi2; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 3</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil_flyhi2; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi2; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 3</label>
-                      <input readonly type="text" id="target" name="banding_flyhi2" class="form-control" value="<?php $banding[]=$banding_flyhi2=($row->hasil_flyhi2-$row->target_flyhi2)/$row->target_flyhi2*100; echo $banding_flyhi2;?>">
+                      <input readonly type="text" id="target" name="banding_flyhi2" class="form-control" value="<?php $banding[]=$banding_flyhi2=($row->target_flyhi2-$row->hasil_flyhi2)/$row->target_flyhi2*100; echo $banding_flyhi2;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1148,20 +1207,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 4</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi3; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi3; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi3; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 4</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil_flyhi3; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi3; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 4</label>
-                      <input readonly type="text" id="target" name="banding_flyhi3" class="form-control" value="<?php $banding[]=$banding_flyhi3=($row->hasil_flyhi3-$row->target_flyhi3)/$row->target_flyhi3*100; echo $banding_flyhi3;?>">
+                      <input readonly type="text" id="target" name="banding_flyhi3" class="form-control" value="<?php $banding[]=$banding_flyhi3=($row->target_flyhi3-$row->hasil_flyhi3)/$row->target_flyhi3*100; echo $banding_flyhi3;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1179,26 +1238,76 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 5</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi4; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi4; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi4; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 5</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil_flyhi4; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan_flyhi4; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 5</label>
-                      <input readonly type="text" id="target" name="banding_flyhi4" class="form-control" value="<?php $banding[]=$banding_flyhi4=($row->hasil_flyhi4-$row->target_flyhi4)/$row->target_flyhi4*100; echo $banding_flyhi4;?>">
+                      <input readonly type="text" id="target" name="banding_flyhi4" class="form-control" value="<?php $banding[]=$banding_flyhi4=($row->target_flyhi4-$row->hasil_flyhi4)/$row->target_flyhi4*100; echo $banding_flyhi4;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
                 </div><hr>
                 <?php 
               }
+
+              if ($row->satuan0==1) {
+                          $satuan0="Rupiah";
+                        }elseif ($row->satuan0==2) {
+                          $satuan0="Hari";
+                        }elseif ($row->satuan0==3) {
+                          $satuan0="%";
+                        }elseif ($row->satuan0==4) {
+                          $satuan0="Kali";
+                        }
+
+                        if ($row->satuan1==1) {
+                          $satuan1="Rupiah";
+                        }elseif ($row->satuan1==2) {
+                          $satuan1="Hari";
+                        }elseif ($row->satuan1==3) {
+                          $satuan1="%";
+                        }elseif ($row->satuan1==4) {
+                          $satuan1="Kali";
+                        }
+
+                        if ($row->satuan2==1) {
+                          $satuan2="Rupiah";
+                        }elseif ($row->satuan2==2) {
+                          $satuan2="Hari";
+                        }elseif ($row->satuan2==3) {
+                          $satuan2="%";
+                        }elseif ($row->satuan2==4) {
+                          $satuan2="Kali";
+                        }
+
+                        if ($row->satuan3==1) {
+                          $satuan3="Rupiah";
+                        }elseif ($row->satuan3==2) {
+                          $satuan3="Hari";
+                        }elseif ($row->satuan3==3) {
+                          $satuan3="%";
+                        }elseif ($row->satuan3==4) {
+                          $satuan3="Kali";
+                        }
+
+                        if ($row->satuan4==1) {
+                          $satuan4="Rupiah";
+                        }elseif ($row->satuan4==2) {
+                          $satuan4="Hari";
+                        }elseif ($row->satuan4==3) {
+                          $satuan4="%";
+                        }elseif ($row->satuan4==4) {
+                          $satuan4="Kali";
+                        }
               // aktivitas0
               if ($row->aktifitas0!=='') {
                 ?>
@@ -1212,20 +1321,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 1</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target0; ?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan0; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 1</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil0; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan0; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 1</label>
-                      <input readonly type="text" id="target" name="banding0" class="form-control" value="<?php $banding[]=$banding0=($row->hasil0-$row->target0)/$row->target0*100; echo $banding0;?>">
+                      <input readonly type="text" id="target" name="banding0" class="form-control" value="<?php $banding[]=$banding0=$row->hasil0/$row->target0*100; echo $banding0;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1246,20 +1355,20 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 2</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target1;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan1; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil2">Hasil 2</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil1; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan1; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 2</label>
-                      <input readonly type="text" id="target" name="banding1" class="form-control" value="<?php $banding[]=$banding1=($row->hasil1-$row->target1)/$row->target1*100; echo $banding1;?>">
+                      <input readonly type="text" id="target" name="banding1" class="form-control" value="<?php $banding[]=$banding1=$row->hasil1/$row->target1*100; echo $banding1;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1280,14 +1389,14 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 3</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target2;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan2; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil3">Hasil 3</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil2; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan2; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
@@ -1313,14 +1422,14 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 4</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target3;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan3; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil4">Hasil 4</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil3; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan3; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
@@ -1347,14 +1456,14 @@ if ($row->status_res==0) {
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 5</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target4;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan4; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil5">Hasil 5</label>
                       <input readonly type="text" id="target" name="hasil_flyhi0" class="form-control" value="<?php echo $row->hasil4; ?>">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $satuan4; ?></span>
                     </div>
                   </div>
                   <div class="col-sm-2 col-md-2 col-xs-12">
@@ -1393,7 +1502,7 @@ if ($row->status_res==0) {
                   <div class="col-sm-2 col-md-2 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Perbandingan 1</label>
-                      <input readonly type="text" id="target" name="banding_financial0" class="form-control" value="<?php $banding[]=$banding_financial0=($row->hasil_financial0-$row->target_financial0)/$row->target_financial0*100; echo $banding_financial0;?>">
+                      <input readonly type="text" id="target" name="banding_financial0" class="form-control" value="<?php $banding[]=$banding_financial0=$row->hasil_financial0/$row->target_financial0*100; echo $banding_financial0;?>">
                       <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo '%'; ?></span>
                     </div>
                   </div>
@@ -1997,6 +2106,10 @@ if ($row->status_res==0) {
               } ?>
               <!-- lg -->
 
+          
+          <?php 
+            $summary=array_sum($banding)/sizeof($banding);
+          ?>
 
           </div>
         </div>
@@ -2484,7 +2597,7 @@ if ($row->status_res==0) {
           startAngle: 180,
           endAngle: 0,
           min: 0,
-          max: 100,
+          max: 200,
           precision: 0,
           splitNumber: 10,
           axisLine: {
@@ -2512,12 +2625,12 @@ if ($row->status_res==0) {
             show: true,
             formatter: function(v) {
               switch (v + '') {
+                case '-50':
+                  return '';
                 case '30':
-                  return 'c';
+                  return '';
                 case '60':
-                  return 'b';
-                case '90':
-                  return 'a';
+                  return '';
                 default:
                   return '';
               }
@@ -2569,6 +2682,14 @@ if ($row->status_res==0) {
         }]
       });
       </script>
+
+      <?php 
+      /*$i=1;
+      while (isset($banding[$i])) {
+        echo $banding[$i].' ';
+        $i++;
+      }*/
+       ?>
 
   </body>
   </html>

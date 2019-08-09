@@ -166,7 +166,8 @@ include ('check_session.php');
           <!-- start of running program achievement -->
           <div class="col-md-12 col-sm-8 col-xs-12">
           <div class="title_left">
-                    <h5>Selamat Datang <?php echo $_SESSION['nama']; ?>, di Culture Acceleration Report!</h5>
+                    <h5>Selamat Datang <b><?php echo $_SESSION['nama']; ?></b>, di Culture Acceleration Report!</h5>
+                    <h5>Culture Acceleration Report adalah program wajib setiap Unit PT Garuda Indonesia untuk mengaktualisasi budaya perusahaan</h5>
                     <h5>Buat program, tentukan goals, and let's FLY-HI! </h5>
                   </div>
                   <?php if (isset($_GET['pesan'])&& $_GET['pesan']==1) {
@@ -209,7 +210,7 @@ include ('check_session.php');
                   <!-- sini inininin -->
                   <table class="table table-striped table-bordered">
                       <tr>
-                        <th>Kode Unik</th>
+                        <th>Kode Program</th>
                         <td><?php echo $row->id; ?></td>
                       </tr>
                       <tr>
@@ -520,7 +521,8 @@ include ('check_session.php');
             <?php }else{?>
             <div class="col-md-12 col-sm-8 col-xs-12">
             <div class="title_left">
-                    <h5>Selamat Datang <?php echo $_SESSION['nama']; ?>, di Culture Acceleration Report!</h5>
+                    <h5>Selamat Datang <b><?php echo $_SESSION['nama']; ?></b>, di Culture Acceleration Report!</h5>
+                    <h5>Culture Acceleration Report adalah program wajib setiap Unit PT Garuda Indonesia untuk mengaktualisasi budaya perusahaan</h5>
                     <h5>Buat program, tentukan goals, and let's FLY-HI! </h5>
                   </div>
               <div class="x_panel">

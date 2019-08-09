@@ -316,14 +316,14 @@ else
 												<label class="control-label col-md-3 col-sm-3 col-xs-12">Tanggal Mulai <span class="required">*</span>
 												</label>
 												<div class="col-md-6 col-sm-6 col-xs-12">
-													<input id="start_date" name="start_date" class="form-control col-md-7 col-xs-12" required="required" type="text" placeholder="MM/DD/YYYY">
+													<input id="start_date" name="start_date" class="form-control col-md-7 col-xs-12" required="required" type="date" placeholder="MM/DD/YYYY">
 												</div>
 											</div>
 											<div class="form-group">
 												<label class="control-label col-md-3 col-sm-3 col-xs-12">Tanggal Selesai <span class="required" >*</span>
 												</label>
 												<div class="col-md-6 col-sm-6 col-xs-12">
-													<input id="end_date" name="end_date" class="form-control col-md-7 col-xs-12" required="required" type="text" placeholder="MM/DD/YYYY">
+													<input id="end_date" name="end_date" class="form-control col-md-7 col-xs-12" required="required" type="date" placeholder="MM/DD/YYYY">
 												</div>
 											</div>
 											<div class="ln_solid"></div>
@@ -450,9 +450,7 @@ else
 																	<select class="form-control" name="satuan_financial[]">
 																		<option value="" disabled selected>Choose your option</option>
 																		<option value="Rupiah">Uang (Rupiah)</option>
-																		<option value="Hari">Waktu (Hari)</option>
 																		<option value="%">Persentase (%)</option>
-																		<option value="Kali">Jumlah (Kali)</option>
 																	</select> 	
 																</div>
 																</div>
@@ -475,8 +473,6 @@ else
 																<label>Satuan Target</label>
 																	<select class="form-control" name="satuan_customer[]">
 																		<option value="" disabled selected>Choose your option</option>
-																		<option value="Rupiah">Uang (Rupiah)</option>
-																		<option value="Hari">Waktu (Hari)</option>
 																		<option value="%">Persentase (%)</option>
 																		<option value="Kali">Jumlah (Kali)</option>
 																	</select> 	
@@ -777,7 +773,7 @@ else
 		<script src="../../vendors/iCheck/icheck.min.js"></script>
 		<!-- bootstrap-daterangepicker -->
 		<script src="../js/moment/moment.min.js"></script>
-		<script src="../js/datepicker/daterangepicker.js"></script>
+		<!-- <script src="../js/datepicker/daterangepicker.js"></script> -->
 		<!-- bootstrap-wysiwyg -->
 		<script src="../../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
 		<script src="../../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
@@ -1230,5 +1226,21 @@ else
 			});
 		</script>
 		<!-- satuan after lg -->
+
+		<!-- date validation -->
+		<script type="text/javascript">
+		    var start_date = document.getElementById('start_date');
+			var end_date = document.getElementById('end_date');
+
+			start_date.addEventListener('change', function() {
+			    if (start_date.value)
+			        end_date.min = start_date.value;
+			}, false);
+			end_date.addEventLiseter('change', function() {
+			    if (end_date.value)
+			        start_date.max = end_date.value;
+			}, false);
+		</script>
+		<!-- date validation -->
 	</body>
 	</html>

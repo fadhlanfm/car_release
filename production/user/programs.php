@@ -218,7 +218,6 @@ else
                     echo'<td>'.$row->end.'</td>';
                     echo'<td>'.$status.'</td>';
                     echo'<td><a href="lihat_logbook.php ?id='.$row->id.'"><button style="width:100%;" class="btn btn-primary btn-xs">Lihat Evaluasi</button></a></td>';
-                    echo'<td><a href="edit_logbook.php ?id='.$row->id.'"><button style="width:100%;" class="btn btn-warning btn-xs">Edit</button></a></td>';
                     echo'<td><a href="input_hasil.php ?id='.$row->id.'"><button style="width:100%;" class="btn btn-success btn-xs">Input Hasil</button></a></td>';
                     echo'</tr>';
                     $i++;

@@ -202,7 +202,7 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
             <form action="post_hasil_logbook.php" method="POST"><br>
               <div class="row">
                 <div class="col-md-1 col-sm-1 col-xs-12">
-                <label>Kode Unik</label>
+                <label>Kode Program</label>
                   <input readonly class="form-control" type="text" name="id" id="id" value="<?php echo $row->id ?>">
                 </div> 
               </div> <br/> <hr>
@@ -221,14 +221,38 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 1</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi0; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi0; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey">
+                          <?php
+                            if ($row->satuan_flyhi0==1) {
+                              echo "Rupiah";
+                            }elseif ($row->satuan_flyhi0==2) {
+                              echo "Hari";
+                            }elseif ($row->satuan_flyhi0==3) {
+                              echo "%";
+                            }elseif ($row->satuan_flyhi0==4) {
+                              echo "Kali";
+                            }
+                          ?>
+                        </span>
                    </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 1</label>
                       <input type="text" id="target" name="hasil_flyhi0" class="form-control" value="">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey">
+                        <?php
+                          if ($row->satuan_flyhi0==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi0==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi0==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi0==4) {
+                            echo "Kali";
+                          }
+                        ?>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -245,14 +269,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 2</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi1; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi1; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi1==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi1==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi1==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi1==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 2</label>
                       <input type="text" id="target" name="hasil_flyhi1" class="form-control" value="">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi1==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi1==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi1==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi1==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div>
@@ -269,14 +313,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 3</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi2; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi2; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi2==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi2==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi2==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi2==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 3</label>
                       <input type="text" id="target" name="hasil_flyhi2" class="form-control" value="">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi2==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi2==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi2==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi2==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div>
@@ -293,14 +357,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 4</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi3; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi3; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi3==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi3==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi3==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi3==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 4</label>
                       <input type="text" id="target" name="hasil_flyhi3" class="form-control" value="">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi3==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi3==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi3==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi3==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div>
@@ -317,14 +401,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 5</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target_flyhi4; ?>" class="form-control">
-                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi4; ?></span>
+                        <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi4==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi4==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi4==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi4==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 5</label>
                       <input type="text" id="target" name="hasil_flyhi4" class="form-control" value="">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan_flyhi4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan_flyhi4==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan_flyhi4==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan_flyhi4==3) {
+                            echo "%";
+                          }elseif ($row->satuan_flyhi4==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div><hr>
@@ -344,14 +448,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 1</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target0; ?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan0==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan0==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan0==3) {
+                            echo "%";
+                          }elseif ($row->satuan0==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil1">Hasil 1</label>
                       <input type="text" id="target" name="hasil0" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan0; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan0==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan0==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan0==3) {
+                            echo "%";
+                          }elseif ($row->satuan0==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div>
@@ -371,14 +495,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 2</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target1;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan1==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan1==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan1==3) {
+                            echo "%";
+                          }elseif ($row->satuan1==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil2">Hasil 2</label>
                       <input type="text" id="target" name="hasil1" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan1; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan1==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan1==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan1==3) {
+                            echo "%";
+                          }elseif ($row->satuan1==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div> 
@@ -398,14 +542,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 3</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target2;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan2==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan2==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan2==3) {
+                            echo "%";
+                          }elseif ($row->satuan2==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil3">Hasil 3</label>
                       <input type="text" id="target" name="hasil2" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan2; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan2==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan2==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan2==3) {
+                            echo "%";
+                          }elseif ($row->satuan2==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div> 
@@ -424,14 +588,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 4</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target3;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan3==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan3==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan3==3) {
+                            echo "%";
+                          }elseif ($row->satuan3==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil4">Hasil 4</label>
                       <input type="text" id="target" name="hasil3" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan3; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan3==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan3==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan3==3) {
+                            echo "%";
+                          }elseif ($row->satuan3==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div> 
@@ -451,14 +635,34 @@ $message = "Anda akan submit hasil dari program ".$row->nama_program." ".$row2->
                     <div class="input-field col s6 has-feedback">
                       <label for="target1">Target 5</label>
                       <input readonly type="text" id="target" value="<?php echo $row->target4;?>" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan4==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan4==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan4==3) {
+                            echo "%";
+                          }elseif ($row->satuan4==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                   <div class="col-sm-3 col-md-3 col-xs-12">
                     <div class="input-field col s6 has-feedback">
                       <label for="hasil5">Hasil 5</label>
                       <input type="text" id="target" name="hasil4" class="form-control">
-                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php echo $row->satuan4; ?></span>
+                      <span class="form-control-feedback right" aria-hidden="true" style="color: grey"><?php
+                          if ($row->satuan4==1) {
+                            echo "Rupiah";
+                          }elseif ($row->satuan4==2) {
+                            echo "Hari";
+                          }elseif ($row->satuan4==3) {
+                            echo "%";
+                          }elseif ($row->satuan4==4) {
+                            echo "Kali";
+                          }
+                        ?></span>
                     </div>
                   </div>
                 </div> <hr>

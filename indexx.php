@@ -12,30 +12,28 @@
         else{
         }
 ?>
-
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Login Admin</title>
-	<link rel="icon" href="assets/gi.ico" />
+	<title>Culture Acceleration Report</title>
+    <link rel="icon" href="assets/gi.ico" />
 	<link rel="stylesheet" type="text/css" href="assets/css_login.css">
+	<script type="text/javascript" src="assets/admin.js"></script>
 	<script type="text/javascript">
 		$('.message a').click(function(){
   	 		$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 		});
 	</script>
+    <style type="text/css">
+        
+    </style>
 </head>
 <body>
-	<div class="login-page">	
-  	<div class="form">
-    	<form class="login-form" action="acc_login.php" method="POST">
-    		<h1>Login CAR</h1>
-    		<?php if (isset($_GET['alert']) && $_GET['alert']==1) {
-				echo "<h5><mark>Username atau Password salah</mark></h5>";
-			} ?>
-			<input type="text" placeholder="Username" name="id">
-			<input type="password" placeholder="Password" name="password">
-			<button type="submit">Masuk</button>
-		</form>
+	<div class="login-page">
+  	<div class="form" id="form">
+    	<h1><a href="login_responden.php">Login Unit</a></h1>
+    	<hr>
+    	<h1><a href="login_admin.php">Login Admin</a></h1>
   	</div>
 	</div>
 </body>
